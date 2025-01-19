@@ -1,0 +1,59 @@
+/* styles.css */
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --background-color: #333;
+}
+
+body.dark-mode {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --background-color: #ccc;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.theme-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+}
+
+video {
+    width: 100%;
+    border: 2px solid var(--primary-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-top: 2px solid var(--primary-color);
+}
+
+.material-icons {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 100px;
+}
